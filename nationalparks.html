@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Parks</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container px-5">
+            <a class="navbar-brand" href="#"> The Great OutDoors</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="./homepage.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./nationalparks.html">National Parks</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./mountains.html">Mountains</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Header-->
+    <header class="bg-success py-5">
+        <div class="container px-5">
+            <div class="row gx-5 align-items-center justify-content-center">
+                <div class="col-lg-8 col-xl-7 col-xxl-6">
+                    <div class="my-5 text-center text-xl-start">
+                        <h1 class=" text-white text-center">Find A National Park</h1>
+                        <p class="lead text-white">Discover our national parks in America and our most valued locations, made possible by supporters like you, and
+                        begin planning your trip here by locating your park.</p>
+                        <form class="row g-3">
+                            <div>
+                                <h5 class="text-white text-center">Select A Category</h5>
+                                <input type="radio" name="by-select" class="form-check-input" id="location"
+                                    name="by_location" value="Location">
+                                <label for="location" class=" text-white text-center">Location</label>
+
+                                <input type="radio" name="by-select" class="form-check-input" id="type" name="by_type"
+                                    value="Type">
+                                <label for="type" class=" text-white">Park Type</label>
+                            </div>
+                            <label for="state_option" id="lableChange" class="text-white"></label>
+
+                            <select name="state_option" id="state_option" class="form-select">
+                            </select>
+
+                            <button type="button" class="btn btn-dark col-auto" id="selectAll">See All Parks</button>
+                            <button type="submit" class="btn btn-dark col-auto" id="clear-table">Clear</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5" img  src="./images/mountains.jpg
+                        " alt="..." /></div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- <h3>Lucky Winner </h3> -->
+        <table class="table table-bordered" id="parksTbl">
+            <thead>
+                <tr class="table-secondary">
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>City</th>
+                    <th>State</th>
+                    <th>Zip</th>
+                    <th>Phone</th>
+                    <th>Website</th>
+                </tr>
+            </thead>
+            <tbody id="tblBody">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+    <script src="./scripts/locationData.js"></script>
+    <script src="./scripts/mountainData.js"></script>
+    <script src="./scripts/nationalParkData.js"></script>
+    <script src="./scripts/parkTypeData.js"></script>
+    <script src="./scripts/nationalParksSearch.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+.row {
+  justify-content: space-evenly;
+}
+
+
+.navbar-brand {
+  font-family: "Caveat"Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#bgMount {
+  background-image:url("../images/mountains.jpg" );background-repeat: no-repeat;
+ background-clip:width 300px; height: 500px;
+};
+  
